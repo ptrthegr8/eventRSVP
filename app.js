@@ -61,6 +61,7 @@ app.post('/reply', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    mongoose.connect('mongodb://localhost/rsvp');
+    //mongoose.connect('mongodb://localhost/rsvp');
+    mongoose.connect(`mongodb://${dbUser}:${dbPwd}@${dbURI}/${dbName}`);
     console.log(`listening on http://localhost:${PORT}`)
 });
