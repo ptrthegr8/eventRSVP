@@ -1,0 +1,45 @@
+fieldset {
+    width: 200px;
+}
+
+#submitBut {
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: cornflowerblue;
+    color: white;
+    align-self: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+#attendance {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#guestList {
+    display: flex;
+    width: 500px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#guestsAttending {
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+#guestsNotAttending {
+    height: 100%;
+    width: 50%;
+    text-align: center;
+}

@@ -1,0 +1,13 @@
+html
+    head
+        link(rel="stylesheet" href="app.css")
+    body
+        #guestList
+            #guestsAttending <strong><u>Attending</u></strong>
+                for response in responses
+                    if response.attending
+                        div= response.name
+            #guestsNotAttending <strong><u>Not Attending</u></strong>
+                for response in responses
+                    if !response.attending
+                        div= response.name

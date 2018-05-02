@@ -1,0 +1,30 @@
+html
+    head
+        link(rel="stylesheet" href="app.css")
+    body
+        form(id="rsvpForm",action="/reply",name="RSVP", method="POST", enctype="application/json")
+            fieldset
+                label(for="name") Name: 
+                input(type="text", name="name", id="name")
+                label(for="email") Email: 
+                input(type="email", id="mail", name="mail")
+            fieldset#attendance
+                label Are you coming?
+                br
+                label(for="attending") Yes, I'll be there! 
+                input(type="radio" id="attending" name="attending" value="true")
+                br
+                label(for="notAttending") No, I hate parties.
+                input(type="radio" id="notAttending" name="attending" value="false")
+            fieldset
+                label(for="guests") Number of Guests?  
+                select#guests(name="guests")
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+                    option 6
+                    option 7
+                    option 8
+            input#submitBut(type="submit", value="Submit")
